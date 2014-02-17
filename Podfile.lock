@@ -1,0 +1,21 @@
+PODS:
+  - MMDrawerController (0.5.2):
+    - MMDrawerController/Core
+    - MMDrawerController/MMDrawerBarButtonItem
+    - MMDrawerController/MMDrawerVisualStates
+    - MMDrawerController/Subclass
+  - MMDrawerController/Core (0.5.2)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.2):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.5.2):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.5.2):
+    - MMDrawerController/Core
+
+DEPENDENCIES:
+  - MMDrawerController (= 0.5.2)
+
+SPEC CHECKSUMS:
+  MMDrawerController: 60bce0387ff42670d9a5a392e2f531be2fd39ce9
+
+COCOAPODS: 0.28.0
