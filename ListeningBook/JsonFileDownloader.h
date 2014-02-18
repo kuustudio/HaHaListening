@@ -13,7 +13,7 @@
 
 @interface JsonFileDownloader: NSObject<NSURLConnectionDelegate>
 
-@property(nonatomic,assign)id<JsonFileDownloaderDelegate> delegate;
+@property(nonatomic,strong)id<JsonFileDownloaderDelegate> delegate;
 
 -(void)downloadFileFromUrlStr:(NSString *)urlStr;
 

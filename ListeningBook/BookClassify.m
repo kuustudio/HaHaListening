@@ -8,6 +8,9 @@
 
 #import "BookClassify.h"
 
+static NSString *const bookIdIdentifier = @"bookClassifyIdIdentifier";
+static NSString *const bookNameIdentifier = @"bookClassifyNameIdentifier";
+
 @implementation BookClassify
 
 -(id)initWithID:(NSString *)bookid WithName:(NSString *)bookname
@@ -18,6 +21,22 @@
         _bookName=bookname;
     }
     return self;
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+    self=[super init];
+    if (self) {
+        _bookID=[aDecoder decodeObjectForKey:bookIdIdentifier];
+        _bookName=[aDecoder decodeObjectForKey:bookNameIdentifier];
+    }
+    return self;
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:_bookID forKey:bookIdIdentifier];
+    [aCoder encodeObject:_bookName forKey:bookNameIdentifier];
 }
 
 @end

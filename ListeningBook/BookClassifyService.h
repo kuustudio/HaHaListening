@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BookClassifyService : NSObject
+#import "JsonFileDownloader.h"
+
+@interface BookClassifyService :JsonFileDownloader
 
 @end

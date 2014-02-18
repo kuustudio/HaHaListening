@@ -23,6 +23,7 @@
 
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
+    NSLog(@"didFailWithError");
     if (self.delegate!=nil && [self.delegate respondsToSelector:@selector(receivedJsonFailed)]) {
         [self.delegate receivedJsonFailed];
     }
@@ -40,10 +41,17 @@
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
+    //from GBK to UTF-8
+    NSLog(@"connectionDidFinishLoading");
     NSError *error=nil;
-    NSDictionary *objDict=[NSJSONSerialization JSONObjectWithData:_jsonData options:NSJSONReadingMutableContainers error:&error];
     
-    if (error!=nil && objDict!=nil) {
+    NSStringEncoding encode=CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    NSString *jsonStr=[[NSString alloc]initWithData:_jsonData encoding:encode];
+    NSData *encodeJsonData=[jsonStr dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *objDict=nil;
+    objDict=[NSJSONSerialization JSONObjectWithData:encodeJsonData options:NSJSONReadingMutableContainers error:&error];
+    
+    if (error!=nil || objDict==nil) {
         if (self.delegate!=nil && [self.delegate respondsToSelector:@selector(receivedJsonFailed)]) {
             [self.delegate receivedJsonFailed];
         }

@@ -8,11 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BookClassify : NSObject
+@interface BookClassify : NSObject<NSCoding>
 
 @property(nonatomic,strong)NSString *bookID;
 @property(nonatomic,strong)NSString *bookName;
 
 -(id)initWithID:(NSString *)bookid WithName:(NSString *)bookname;
+
+-(void)encodeWithCoder:(NSCoder *)aCoder;
+
+-(id)initWithCoder:(NSCoder *)aDecoder;
 
 @end
