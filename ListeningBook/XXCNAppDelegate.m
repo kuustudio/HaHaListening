@@ -8,12 +8,22 @@
 
 #import "XXCNAppDelegate.h"
 
+#import "BaseVCGenerator.h"
+
 @implementation XXCNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    BaseVCGenerator *baseBCGenerator=[[BaseVCGenerator alloc]init];
+    
+    _baseVC=[baseBCGenerator generatorBaseVC];
+    
+    self.window.rootViewController=_baseVC;
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
