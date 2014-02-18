@@ -8,6 +8,7 @@
 
 #import "XXCNAppDelegate.h"
 
+#import "BaseViewMediator.h"
 #import "BaseVCGenerator.h"
 
 @implementation XXCNAppDelegate
@@ -17,15 +18,16 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    BaseVCGenerator *baseBCGenerator=[[BaseVCGenerator alloc]init];
     
-    _baseVC=[baseBCGenerator generatorBaseVC];
+    BaseVCGenerator *tempGenerator=[[BaseVCGenerator alloc]init];
+    [[BaseViewMediator sharedMediator] setBaseVC:[tempGenerator generatorBaseVC]];
     
-    self.window.rootViewController=_baseVC;
+    self.window.rootViewController=[[BaseViewMediator sharedMediator] getBaseVC];
     
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

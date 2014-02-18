@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title=@"下载";
+    [self.view setBackgroundColor:[UIColor brownColor]];
 }
 
 - (void)didReceiveMemoryWarning

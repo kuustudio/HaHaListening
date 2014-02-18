@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title=@"我的收藏";
+    self.view.backgroundColor=[UIColor orangeColor];
 }
 
 - (void)didReceiveMemoryWarning

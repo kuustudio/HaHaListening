@@ -1,5 +1,5 @@
 //
-//  CatalogViewController.h
+//  SettingViewController.h
 //  ListeningBook
 //
 //  Created by wang yan on 14-2-18.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CenterViewController.h"
 
-#import "CatalogListViewController.h"
-
-@interface CatalogViewController : UIViewController
+@interface SettingViewController :CenterViewController
 
 @end

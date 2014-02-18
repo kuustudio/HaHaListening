@@ -9,24 +9,26 @@
 #import "BaseVCGenerator.h"
 #import <MMDrawerController.h>
 
-#import "ClassifyViewController.h"
 #import "ListeningViewController.h"
 #import "CatalogViewController.h"
+
+#import "BaseViewMediator.h"
 
 @implementation BaseVCGenerator
 
 
 -(UIViewController *)generatorBaseVC
 {
-    ClassifyViewController *classfyVC=[[ClassifyViewController alloc]init];
-    UINavigationController *classfyNavC=[[UINavigationController alloc]initWithRootViewController:classfyVC];
+    UIViewController *centerVC=[[BaseViewMediator sharedMediator] defaultCenterVC];
+    
+    UINavigationController *centerNavC=[[UINavigationController alloc]initWithRootViewController:centerVC];
     
     ListeningViewController *listeningVC=[[ListeningViewController alloc] init];
     UINavigationController *listeningNavC=[[UINavigationController alloc]initWithRootViewController:listeningVC];
     
     CatalogViewController *catalogVC=[[CatalogViewController alloc] init];
     
-    MMDrawerController *mmDrawerCon=[[MMDrawerController alloc]initWithCenterViewController:classfyNavC leftDrawerViewController:catalogVC rightDrawerViewController:listeningNavC];
+    MMDrawerController *mmDrawerCon=[[MMDrawerController alloc]initWithCenterViewController:centerNavC leftDrawerViewController:catalogVC rightDrawerViewController:listeningNavC];
     
     [mmDrawerCon setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
     [mmDrawerCon setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
