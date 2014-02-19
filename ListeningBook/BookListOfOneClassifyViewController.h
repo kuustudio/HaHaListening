@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "OneBookClassifyListDataManager.h"
 
-@interface BookListOfOneClassifyViewController : UIViewController<OneBookClassifyListDataManagerDelegate>
+@interface BookListOfOneClassifyViewController : UIViewController<OneBookClassifyListDataManagerDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong)NSString *classifyID;
 @property(nonatomic,strong)NSString *classifyName;

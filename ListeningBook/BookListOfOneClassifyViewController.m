@@ -7,12 +7,19 @@
 //
 
 #import "BookListOfOneClassifyViewController.h"
+#import "BookListOfOneClassifyTableViewCell.h"
+
+static NSString *const cellIdentifier=@"BookListOfOneClassifyTableViewCellIdentifier";
 
 @interface BookListOfOneClassifyViewController ()
 
 @end
 
 @implementation BookListOfOneClassifyViewController
+{
+    UITableView *_tableview;
+    NSArray *_tableDataArray;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,6 +37,11 @@
     self.view.backgroundColor=[UIColor whiteColor];
     self.title=_classifyName;
     
+    _tableview=[[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
+    _tableview.delegate=self;
+    _tableview.dataSource=self;
+    [_tableview registerClass:[BookListOfOneClassifyTableViewCell class] forCellReuseIdentifier:cellIdentifier];
+    [self.view addSubview:_tableview];
     
     OneBookClassifyListDataManager *oneBCListManager=[[OneBookClassifyListDataManager alloc]init];
     oneBCListManager.delegate=self;
@@ -46,8 +58,37 @@
 
 -(void)getBookClassifyListComplateWithData:(NSArray *)listArray
 {
-    NSLog(@"%@",listArray);
+    _tableDataArray=listArray;
+    [_tableview reloadData];
 }
+
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_tableDataArray count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    BookListOfOneClassifyTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell==nil) {
+        cell=[[BookListOfOneClassifyTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    cell.soundBook=[_tableDataArray objectAtIndex:indexPath.row];
+    return cell;
+}
+
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 90.0;
+}
+
 
 /*
 #pragma mark - Navigation

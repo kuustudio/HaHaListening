@@ -7,7 +7,7 @@
 //
 
 #import "OneBookClassifyListDataManager.h"
-#import "BookClassify.h"
+#import "SoundBook.h"
 
 static NSString *const baseURL=@"http://apps.iyuba.com/voa/titleApi.jsp?maxid=0&type=iOS&format=json&pages=1&pageNum=10&parentID=";
 
@@ -43,8 +43,11 @@ static NSString *const baseURL=@"http://apps.iyuba.com/voa/titleApi.jsp?maxid=0&
     NSArray *tempArray=[tempJsonDic objectForKey:@"data"];
     NSInteger listcount=[tempArray count];
     for (int i=0; i<listcount; i++) {
-        BookClassify *tempBC=[[BookClassify alloc]initWithID:[tempArray[i] objectForKey:@"VoaId"] WithName:[tempArray[i] objectForKey:@"Title_cn"]];
-        
+        SoundBook *tempBC=[[SoundBook alloc]init];
+        tempBC.bookCatagory=[tempArray[i] objectForKey:@"VoaId"];
+        tempBC.bookLogo=[tempArray[i] objectForKey:@"Pic"];
+        tempBC.bookTime=[tempArray[i] objectForKey:@"PublishTime"];
+        tempBC.bookTitle=[tempArray[i] objectForKey:@"Title_cn"];
         [_objArray addObject:tempBC];
     }
     

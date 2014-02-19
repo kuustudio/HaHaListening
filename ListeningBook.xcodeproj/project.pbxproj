@@ -27,9 +27,9 @@
 		E37CD68F18B37B2000B33E16 /* OneBookClassifyListDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CD68E18B37B2000B33E16 /* OneBookClassifyListDataManager.m */; };
 		E37CD69218B37B3700B33E16 /* OneBookClassifyListService.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CD69118B37B3700B33E16 /* OneBookClassifyListService.m */; };
 		E37CD69618B37B7D00B33E16 /* JsonFileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CD69518B37B7D00B33E16 /* JsonFileDownloader.m */; };
-		E3D0044418B4624A00BBB6A2 /* XXCNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D0044218B4624A00BBB6A2 /* XXCNViewController.m */; };
-		E3D0044518B4624A00BBB6A2 /* XXCNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3D0044318B4624A00BBB6A2 /* XXCNViewController.xib */; };
 		E3D0044818B4820B00BBB6A2 /* BookListOfOneClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D0044718B4820B00BBB6A2 /* BookListOfOneClassifyViewController.m */; };
+		E3D0044C18B4AC8100BBB6A2 /* BookListOfOneClassifyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D0044B18B4AC8100BBB6A2 /* BookListOfOneClassifyTableViewCell.m */; };
+		E3D0044F18B4AF1E00BBB6A2 /* SoundBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D0044E18B4AF1E00BBB6A2 /* SoundBook.m */; };
 		E3D08AD318B311B6002C63BB /* BaseVCGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D08AD218B311B6002C63BB /* BaseVCGenerator.m */; };
 		E3D08AD618B31208002C63BB /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D08AD518B31208002C63BB /* ClassifyViewController.m */; };
 		E3D08AD918B3123E002C63BB /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D08AD818B3123E002C63BB /* FavoriteViewController.m */; };
@@ -82,11 +82,12 @@
 		E37CD69118B37B3700B33E16 /* OneBookClassifyListService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneBookClassifyListService.m; sourceTree = "<group>"; };
 		E37CD69418B37B7D00B33E16 /* JsonFileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonFileDownloader.h; sourceTree = "<group>"; };
 		E37CD69518B37B7D00B33E16 /* JsonFileDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonFileDownloader.m; sourceTree = "<group>"; };
-		E3D0044118B4624A00BBB6A2 /* XXCNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCNViewController.h; sourceTree = "<group>"; };
-		E3D0044218B4624A00BBB6A2 /* XXCNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCNViewController.m; sourceTree = "<group>"; };
-		E3D0044318B4624A00BBB6A2 /* XXCNViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XXCNViewController.xib; sourceTree = "<group>"; };
 		E3D0044618B4820B00BBB6A2 /* BookListOfOneClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListOfOneClassifyViewController.h; sourceTree = "<group>"; };
 		E3D0044718B4820B00BBB6A2 /* BookListOfOneClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListOfOneClassifyViewController.m; sourceTree = "<group>"; };
+		E3D0044A18B4AC8100BBB6A2 /* BookListOfOneClassifyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListOfOneClassifyTableViewCell.h; sourceTree = "<group>"; };
+		E3D0044B18B4AC8100BBB6A2 /* BookListOfOneClassifyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListOfOneClassifyTableViewCell.m; sourceTree = "<group>"; };
+		E3D0044D18B4AF1E00BBB6A2 /* SoundBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundBook.h; sourceTree = "<group>"; };
+		E3D0044E18B4AF1E00BBB6A2 /* SoundBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundBook.m; sourceTree = "<group>"; };
 		E3D08AD118B311B6002C63BB /* BaseVCGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVCGenerator.h; sourceTree = "<group>"; };
 		E3D08AD218B311B6002C63BB /* BaseVCGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVCGenerator.m; sourceTree = "<group>"; };
 		E3D08AD418B31208002C63BB /* ClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyViewController.h; sourceTree = "<group>"; };
@@ -131,9 +132,6 @@
 		1BC652FE18B258AB0080D5DC = {
 			isa = PBXGroup;
 			children = (
-				E3D0044118B4624A00BBB6A2 /* XXCNViewController.h */,
-				E3D0044218B4624A00BBB6A2 /* XXCNViewController.m */,
-				E3D0044318B4624A00BBB6A2 /* XXCNViewController.xib */,
 				1BC6531018B258AB0080D5DC /* ListeningBook */,
 				1BC6532918B258AB0080D5DC /* ListeningBookTests */,
 				1BC6530918B258AB0080D5DC /* Frameworks */,
@@ -228,6 +226,8 @@
 				E37CD68818B378E000B33E16 /* BookClassify.m */,
 				E37CD68D18B37B2000B33E16 /* OneBookClassifyListDataManager.h */,
 				E37CD68E18B37B2000B33E16 /* OneBookClassifyListDataManager.m */,
+				E3D0044D18B4AF1E00BBB6A2 /* SoundBook.h */,
+				E3D0044E18B4AF1E00BBB6A2 /* SoundBook.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -241,6 +241,17 @@
 				E37CD69118B37B3700B33E16 /* OneBookClassifyListService.m */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		E3D0044918B4ABEA00BBB6A2 /* BookListOfOneClassify */ = {
+			isa = PBXGroup;
+			children = (
+				E3D0044A18B4AC8100BBB6A2 /* BookListOfOneClassifyTableViewCell.h */,
+				E3D0044B18B4AC8100BBB6A2 /* BookListOfOneClassifyTableViewCell.m */,
+				E3D0044618B4820B00BBB6A2 /* BookListOfOneClassifyViewController.h */,
+				E3D0044718B4820B00BBB6A2 /* BookListOfOneClassifyViewController.m */,
+			);
+			name = BookListOfOneClassify;
 			sourceTree = "<group>";
 		};
 		E3D08AE318B3316E002C63BB /* CenterViewControllers */ = {
@@ -267,8 +278,7 @@
 				E3D08ADD18B312DD002C63BB /* ListeningViewController.h */,
 				E3D08ADE18B312DD002C63BB /* ListeningViewController.m */,
 				E37CD67C18B3514800B33E16 /* CatalogViewController */,
-				E3D0044618B4820B00BBB6A2 /* BookListOfOneClassifyViewController.h */,
-				E3D0044718B4820B00BBB6A2 /* BookListOfOneClassifyViewController.m */,
+				E3D0044918B4ABEA00BBB6A2 /* BookListOfOneClassify */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -352,7 +362,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC6531518B258AB0080D5DC /* InfoPlist.strings in Resources */,
-				E3D0044518B4624A00BBB6A2 /* XXCNViewController.xib in Resources */,
 				1BC6531D18B258AB0080D5DC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,11 +427,12 @@
 				1BC6531B18B258AB0080D5DC /* XXCNAppDelegate.m in Sources */,
 				E37CD69218B37B3700B33E16 /* OneBookClassifyListService.m in Sources */,
 				E37CD68218B3596100B33E16 /* BaseViewMediator.m in Sources */,
+				E3D0044C18B4AC8100BBB6A2 /* BookListOfOneClassifyTableViewCell.m in Sources */,
+				E3D0044F18B4AF1E00BBB6A2 /* SoundBook.m in Sources */,
 				E37CD68F18B37B2000B33E16 /* OneBookClassifyListDataManager.m in Sources */,
 				E37CD68918B378E000B33E16 /* BookClassify.m in Sources */,
 				E3D08AD318B311B6002C63BB /* BaseVCGenerator.m in Sources */,
 				E37CD68518B36EB900B33E16 /* SettingViewController.m in Sources */,
-				E3D0044418B4624A00BBB6A2 /* XXCNViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
