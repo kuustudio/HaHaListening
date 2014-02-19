@@ -24,10 +24,12 @@
 		E37CD68218B3596100B33E16 /* BaseViewMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CD68118B3596100B33E16 /* BaseViewMediator.m */; };
 		E37CD68518B36EB900B33E16 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CD68418B36EB900B33E16 /* SettingViewController.m */; };
 		E37CD68918B378E000B33E16 /* BookClassify.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CD68818B378E000B33E16 /* BookClassify.m */; };
-		E37CD68C18B379AF00B33E16 /* BookClassifyList.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CD68B18B379AF00B33E16 /* BookClassifyList.m */; };
-		E37CD68F18B37B2000B33E16 /* BookClassifyDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CD68E18B37B2000B33E16 /* BookClassifyDataManager.m */; };
-		E37CD69218B37B3700B33E16 /* BookClassifyService.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CD69118B37B3700B33E16 /* BookClassifyService.m */; };
+		E37CD68F18B37B2000B33E16 /* OneBookClassifyListDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CD68E18B37B2000B33E16 /* OneBookClassifyListDataManager.m */; };
+		E37CD69218B37B3700B33E16 /* OneBookClassifyListService.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CD69118B37B3700B33E16 /* OneBookClassifyListService.m */; };
 		E37CD69618B37B7D00B33E16 /* JsonFileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CD69518B37B7D00B33E16 /* JsonFileDownloader.m */; };
+		E3D0044418B4624A00BBB6A2 /* XXCNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D0044218B4624A00BBB6A2 /* XXCNViewController.m */; };
+		E3D0044518B4624A00BBB6A2 /* XXCNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3D0044318B4624A00BBB6A2 /* XXCNViewController.xib */; };
+		E3D0044818B4820B00BBB6A2 /* BookListOfOneClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D0044718B4820B00BBB6A2 /* BookListOfOneClassifyViewController.m */; };
 		E3D08AD318B311B6002C63BB /* BaseVCGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D08AD218B311B6002C63BB /* BaseVCGenerator.m */; };
 		E3D08AD618B31208002C63BB /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D08AD518B31208002C63BB /* ClassifyViewController.m */; };
 		E3D08AD918B3123E002C63BB /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D08AD818B3123E002C63BB /* FavoriteViewController.m */; };
@@ -74,14 +76,17 @@
 		E37CD68418B36EB900B33E16 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		E37CD68718B378E000B33E16 /* BookClassify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookClassify.h; sourceTree = "<group>"; };
 		E37CD68818B378E000B33E16 /* BookClassify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookClassify.m; sourceTree = "<group>"; };
-		E37CD68A18B379AF00B33E16 /* BookClassifyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookClassifyList.h; sourceTree = "<group>"; };
-		E37CD68B18B379AF00B33E16 /* BookClassifyList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookClassifyList.m; sourceTree = "<group>"; };
-		E37CD68D18B37B2000B33E16 /* BookClassifyDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookClassifyDataManager.h; sourceTree = "<group>"; };
-		E37CD68E18B37B2000B33E16 /* BookClassifyDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookClassifyDataManager.m; sourceTree = "<group>"; };
-		E37CD69018B37B3700B33E16 /* BookClassifyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookClassifyService.h; sourceTree = "<group>"; };
-		E37CD69118B37B3700B33E16 /* BookClassifyService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookClassifyService.m; sourceTree = "<group>"; };
+		E37CD68D18B37B2000B33E16 /* OneBookClassifyListDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneBookClassifyListDataManager.h; sourceTree = "<group>"; };
+		E37CD68E18B37B2000B33E16 /* OneBookClassifyListDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneBookClassifyListDataManager.m; sourceTree = "<group>"; };
+		E37CD69018B37B3700B33E16 /* OneBookClassifyListService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneBookClassifyListService.h; sourceTree = "<group>"; };
+		E37CD69118B37B3700B33E16 /* OneBookClassifyListService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneBookClassifyListService.m; sourceTree = "<group>"; };
 		E37CD69418B37B7D00B33E16 /* JsonFileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonFileDownloader.h; sourceTree = "<group>"; };
 		E37CD69518B37B7D00B33E16 /* JsonFileDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonFileDownloader.m; sourceTree = "<group>"; };
+		E3D0044118B4624A00BBB6A2 /* XXCNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCNViewController.h; sourceTree = "<group>"; };
+		E3D0044218B4624A00BBB6A2 /* XXCNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCNViewController.m; sourceTree = "<group>"; };
+		E3D0044318B4624A00BBB6A2 /* XXCNViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XXCNViewController.xib; sourceTree = "<group>"; };
+		E3D0044618B4820B00BBB6A2 /* BookListOfOneClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListOfOneClassifyViewController.h; sourceTree = "<group>"; };
+		E3D0044718B4820B00BBB6A2 /* BookListOfOneClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListOfOneClassifyViewController.m; sourceTree = "<group>"; };
 		E3D08AD118B311B6002C63BB /* BaseVCGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVCGenerator.h; sourceTree = "<group>"; };
 		E3D08AD218B311B6002C63BB /* BaseVCGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVCGenerator.m; sourceTree = "<group>"; };
 		E3D08AD418B31208002C63BB /* ClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyViewController.h; sourceTree = "<group>"; };
@@ -126,6 +131,9 @@
 		1BC652FE18B258AB0080D5DC = {
 			isa = PBXGroup;
 			children = (
+				E3D0044118B4624A00BBB6A2 /* XXCNViewController.h */,
+				E3D0044218B4624A00BBB6A2 /* XXCNViewController.m */,
+				E3D0044318B4624A00BBB6A2 /* XXCNViewController.xib */,
 				1BC6531018B258AB0080D5DC /* ListeningBook */,
 				1BC6532918B258AB0080D5DC /* ListeningBookTests */,
 				1BC6530918B258AB0080D5DC /* Frameworks */,
@@ -218,10 +226,8 @@
 			children = (
 				E37CD68718B378E000B33E16 /* BookClassify.h */,
 				E37CD68818B378E000B33E16 /* BookClassify.m */,
-				E37CD68A18B379AF00B33E16 /* BookClassifyList.h */,
-				E37CD68B18B379AF00B33E16 /* BookClassifyList.m */,
-				E37CD68D18B37B2000B33E16 /* BookClassifyDataManager.h */,
-				E37CD68E18B37B2000B33E16 /* BookClassifyDataManager.m */,
+				E37CD68D18B37B2000B33E16 /* OneBookClassifyListDataManager.h */,
+				E37CD68E18B37B2000B33E16 /* OneBookClassifyListDataManager.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -231,8 +237,8 @@
 			children = (
 				E37CD69418B37B7D00B33E16 /* JsonFileDownloader.h */,
 				E37CD69518B37B7D00B33E16 /* JsonFileDownloader.m */,
-				E37CD69018B37B3700B33E16 /* BookClassifyService.h */,
-				E37CD69118B37B3700B33E16 /* BookClassifyService.m */,
+				E37CD69018B37B3700B33E16 /* OneBookClassifyListService.h */,
+				E37CD69118B37B3700B33E16 /* OneBookClassifyListService.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 				E3D08ADD18B312DD002C63BB /* ListeningViewController.h */,
 				E3D08ADE18B312DD002C63BB /* ListeningViewController.m */,
 				E37CD67C18B3514800B33E16 /* CatalogViewController */,
+				E3D0044618B4820B00BBB6A2 /* BookListOfOneClassifyViewController.h */,
+				E3D0044718B4820B00BBB6A2 /* BookListOfOneClassifyViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -344,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC6531518B258AB0080D5DC /* InfoPlist.strings in Resources */,
+				E3D0044518B4624A00BBB6A2 /* XXCNViewController.xib in Resources */,
 				1BC6531D18B258AB0080D5DC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,10 +405,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E37CD68C18B379AF00B33E16 /* BookClassifyList.m in Sources */,
 				E3D08AD918B3123E002C63BB /* FavoriteViewController.m in Sources */,
 				E3D08AD618B31208002C63BB /* ClassifyViewController.m in Sources */,
 				E37CD67F18B3518500B33E16 /* CatalogListViewController.m in Sources */,
+				E3D0044818B4820B00BBB6A2 /* BookListOfOneClassifyViewController.m in Sources */,
 				E3D08ADF18B312DD002C63BB /* ListeningViewController.m in Sources */,
 				E3D08ADC18B312BF002C63BB /* DownloadViewController.m in Sources */,
 				E3D08AE218B31307002C63BB /* CatalogViewController.m in Sources */,
@@ -407,12 +416,13 @@
 				E3D08AE718B331E4002C63BB /* CenterViewController.m in Sources */,
 				1BC6531718B258AB0080D5DC /* main.m in Sources */,
 				1BC6531B18B258AB0080D5DC /* XXCNAppDelegate.m in Sources */,
-				E37CD69218B37B3700B33E16 /* BookClassifyService.m in Sources */,
+				E37CD69218B37B3700B33E16 /* OneBookClassifyListService.m in Sources */,
 				E37CD68218B3596100B33E16 /* BaseViewMediator.m in Sources */,
-				E37CD68F18B37B2000B33E16 /* BookClassifyDataManager.m in Sources */,
+				E37CD68F18B37B2000B33E16 /* OneBookClassifyListDataManager.m in Sources */,
 				E37CD68918B378E000B33E16 /* BookClassify.m in Sources */,
 				E3D08AD318B311B6002C63BB /* BaseVCGenerator.m in Sources */,
 				E37CD68518B36EB900B33E16 /* SettingViewController.m in Sources */,
+				E3D0044418B4624A00BBB6A2 /* XXCNViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

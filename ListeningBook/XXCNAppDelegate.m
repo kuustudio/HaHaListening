@@ -11,7 +11,7 @@
 #import "BaseViewMediator.h"
 #import "BaseVCGenerator.h"
 
-#import "BookClassifyDataManager.h"
+#import "OneBookClassifyListDataManager.h"
 
 @implementation XXCNAppDelegate
 
@@ -29,10 +29,6 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
-    
-    BookClassifyDataManager *bcdm=[[BookClassifyDataManager alloc]init];
-    [bcdm getBookClassifyList];
     
     return YES;
 }

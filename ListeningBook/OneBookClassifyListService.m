@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 小小菜鸟. All rights reserved.
 //
 
-#import "BookClassifyService.h"
+#import "OneBookClassifyListService.h"
 
-@implementation BookClassifyService
+@implementation OneBookClassifyListService
 
 
 @end

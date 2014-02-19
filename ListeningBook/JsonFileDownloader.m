@@ -45,9 +45,13 @@
     NSLog(@"connectionDidFinishLoading");
     NSError *error=nil;
     
+    /*
     NSStringEncoding encode=CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
     NSString *jsonStr=[[NSString alloc]initWithData:_jsonData encoding:encode];
     NSData *encodeJsonData=[jsonStr dataUsingEncoding:NSUTF8StringEncoding];
+     */
+    NSData *encodeJsonData=_jsonData;
+    
     NSDictionary *objDict=nil;
     objDict=[NSJSONSerialization JSONObjectWithData:encodeJsonData options:NSJSONReadingMutableContainers error:&error];
     

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "CenterViewController.h"
 
-@interface ClassifyViewController : CenterViewController
+@interface ClassifyViewController : CenterViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

@@ -1,5 +1,5 @@
 //
-//  BookClassifyDataManager.h
+//  BookClassifyService.h
 //  ListeningBook
 //
 //  Created by wang yan on 14-2-18.
@@ -8,10 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import "BookClassifyService.h"
+#import "JsonFileDownloader.h"
 
-@interface BookClassifyDataManager : NSObject<JsonFileDownloaderDelegate>
-
--(void)getBookClassifyList;
+@interface OneBookClassifyListService :JsonFileDownloader
 
 @end

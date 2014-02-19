@@ -13,12 +13,12 @@ static NSString *const bookNameIdentifier = @"bookClassifyNameIdentifier";
 
 @implementation BookClassify
 
--(id)initWithID:(NSString *)bookid WithName:(NSString *)bookname
+-(id)initWithID:(NSString *)classifyid WithName:(NSString *)classifyname
 {
     self=[super init];
     if (self) {
-        _bookID=bookid;
-        _bookName=bookname;
+        _classifyID=classifyid;
+        _classifyName=classifyname;
     }
     return self;
 }
@@ -27,16 +27,16 @@ static NSString *const bookNameIdentifier = @"bookClassifyNameIdentifier";
 {
     self=[super init];
     if (self) {
-        _bookID=[aDecoder decodeObjectForKey:bookIdIdentifier];
-        _bookName=[aDecoder decodeObjectForKey:bookNameIdentifier];
+        _classifyID=[aDecoder decodeObjectForKey:bookIdIdentifier];
+        _classifyName=[aDecoder decodeObjectForKey:bookNameIdentifier];
     }
     return self;
 }
 
 -(void)encodeWithCoder:(NSCoder *)aCoder
 {
-    [aCoder encodeObject:_bookID forKey:bookIdIdentifier];
-    [aCoder encodeObject:_bookName forKey:bookNameIdentifier];
+    [aCoder encodeObject:_classifyID forKey:bookIdIdentifier];
+    [aCoder encodeObject:_classifyName forKey:bookNameIdentifier];
 }
 
 @end

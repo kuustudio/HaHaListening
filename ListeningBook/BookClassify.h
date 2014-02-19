@@ -10,10 +10,10 @@
 
 @interface BookClassify : NSObject<NSCoding>
 
-@property(nonatomic,strong)NSString *bookID;
-@property(nonatomic,strong)NSString *bookName;
+@property(nonatomic,strong)NSString *classifyID;
+@property(nonatomic,strong)NSString *classifyName;
 
--(id)initWithID:(NSString *)bookid WithName:(NSString *)bookname;
+-(id)initWithID:(NSString *)classifyid WithName:(NSString *)classifyname;
 
 -(void)encodeWithCoder:(NSCoder *)aCoder;
 
